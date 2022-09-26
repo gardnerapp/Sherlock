@@ -29,5 +29,7 @@ Pass the -i option and follow the instructions
 ### Software Licensing
 ### Usage
 ### Contributing Guidelines
-### NGINX Logging Configuration
-### Convert To Gem
+### Switch From Opts to Thor
+### Add Processing module
+### Add functional test w rspec
+### Add cucumber and aruba to test cli interface 
