@@ -12,17 +12,6 @@ You can Learn More About Customizing Nginx Here -> https://docs.nginx.com/nginx/
 
 ## Usage & Supported Modes:
 
-## Integrity Mode
-### Find Changes in a filesystem vs its baseline, log files vs their backups etc.
-Pass the -i option and follow the instructions
-
-- Create hashes for files
-- Compare hash sets
-- Find the differences in files with mismatching hashes (Coming Soon!)
-- Currently Supporting SHA1, SHA2 & MD5 Algorithims
-
-## Honey Mode
-### Find and analyze malicous request
 
 ## TODO
 ### Super Cool Logo
@@ -32,4 +21,4 @@ Pass the -i option and follow the instructions
 ### Switch From Opts to Thor
 ### Add Processing module
 ### Add functional test w rspec
-### Add cucumber and aruba to test cli interface 
+### Add cucumber and aruba to test cli interface
