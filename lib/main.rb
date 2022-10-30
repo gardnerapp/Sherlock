@@ -21,7 +21,8 @@ opts = OptionParser.new do |opts|
   opts.on('-h', '-help', 'Display this screen.') {puts opts; exit!}
 
   opts.on_tail "Examples:"
-  opts.on_tail "#{__FILE__} -d ~/investigation -m integrity\n\n"
+  opts.on_tail "#{__FILE__} -f ~/my_log.txt \n"
+  ops.on_tail "#{__FILE__} -d ~/dir_with_my_logs \n"
 end
 
 opts.order!
