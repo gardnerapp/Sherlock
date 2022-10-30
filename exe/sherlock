@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'sherlock/cli'
+
+Sherlock::CLI.start

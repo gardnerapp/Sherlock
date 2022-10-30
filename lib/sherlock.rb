@@ -5,5 +5,17 @@ require 'request/request'
 
 module Sherlock
   class Error < StandardError; end
-  # Your code goes here...
+  class Sherlock
+    class << self
+      # todo call methods and test for output
+
+      # Sherlock.parse_log
+      # parses a single log file to a collection of Request objs
+      def parse_log; end
+
+      # Sherlock.parse_dir
+      # walks a directory and parses all of the files into Request objs
+      def parse_dir; end
+    end
+  end
 end
