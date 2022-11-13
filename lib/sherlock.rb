@@ -11,11 +11,11 @@ module Sherlock
 
       # Sherlock.parse_log
       # parses a single log file to a collection of Request objs
-      def parse_file; end
+      def parse_file(file); end
 
       # Sherlock.parse_dir
       # walks a directory and parses all of the files into Request objs
-      def parse_dir; end
+      def parse_dir(dir); end
     end
   end
 end
