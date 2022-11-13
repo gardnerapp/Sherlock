@@ -1,5 +1,5 @@
 module Sherlock
-  ATTRIBUTES = %q[
+  ATTRIBUTES = %w[
     remote_addr remote_user time_local
     request status body_bytes_sent
     http_referer
@@ -15,7 +15,9 @@ module Sherlock
 
     # define getter methods
     ATTRIBUTES.each do |attr|
-      define_method "#{attr}" {attr}
+      define_method "#{attr}" do
+       eval("@#{attr}")
+     end
     end # end meta program getter methods
 
   end # end web request class
