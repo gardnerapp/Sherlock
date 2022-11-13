@@ -12,7 +12,7 @@ describe Sherlock::Request do
      "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
    }
 
-   %q[remote_addr time_local request status http_user_agent].each do |attr|
+   %w[remote_addr time_local request status http_user_agent].each do |attr|
      it "Request has #{attr}" do
        req = Sherlock::Request.new(@log)
        expect(eval("req.#{attr}")). to eql(@log[attr])
