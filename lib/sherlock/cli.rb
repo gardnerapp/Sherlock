@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 require "thor"
 require "sherlock.rb"
+
 module Sherlock
   class CLI < Thor
     desc "analyze", "Analyze web logs for malicous activity"
